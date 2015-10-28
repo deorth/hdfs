@@ -24,7 +24,8 @@ func New(address string) (*Client, error) {
 		return nil, err
 	}
 
-	return NewForUser(address, currentUser.Username)
+	//	return NewForUser(address, currentUser.Username)
+	return NewForUser(address, "nobody")
 }
 
 // NewForUser returns a connected Client with the user specified, or an error if
