@@ -18,12 +18,12 @@ var (
 )
 
 func userDir() string {
-	currentUser, err := user.Current()
-	if err != nil || currentUser.Username == "" {
-		return "/"
-	}
+	//	currentUser, err := user.Current()
+	//	if err != nil || currentUser.Username == "" {
+	return "/"
+	//	}
 
-	return path.Join("/user", currentUser.Username)
+	//	return path.Join("/user", currentUser.Username)
 }
 
 // normalizePaths parses the hosts out of HDFS URLs, and turns relative paths
